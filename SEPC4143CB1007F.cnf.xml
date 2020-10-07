@@ -119,7 +119,7 @@
       <stopMediaPort>59999</stopMediaPort>
       <dscpForAudio>184</dscpForAudio>
       <ringSettingBusyStationPolicy>0</ringSettingBusyStationPolicy>
-      <dialTemplate>dialplan.xml</dialTemplate>
+      <dialTemplate>dialplan_89xx.xml</dialTemplate>
       <softKeyFile></softKeyFile>
    </sipProfile>
    <commonProfile>
