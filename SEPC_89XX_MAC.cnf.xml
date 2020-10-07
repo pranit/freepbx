@@ -8,7 +8,7 @@
          <timeZone>Pacific Standard/Daylight Time</timeZone>
          <ntps>
             <ntp>
-               <name>time.apple.com</name>
+               <name>NTP_SERVER_IP</name>
                <ntpMode>Unicast</ntpMode>
             </ntp>
          </ntps>
@@ -22,7 +22,7 @@
                      <sipPort>5060</sipPort>
                      <securedSipPort>5061</securedSipPort>
                   </ports>
-                  <processNodeName>192.168.1.118</processNodeName>
+                  <processNodeName>FREEPBX_IP</processNodeName>
                </callManager>
             </member>
          </members>
@@ -81,7 +81,7 @@
       <alwaysUsePrimeLine>false</alwaysUsePrimeLine>
       <alwaysUsePrimeLineVoiceMail>false</alwaysUsePrimeLineVoiceMail>
       <kpml>3</kpml>
-      <phoneLabel>Pranit Patil Cisco 8945</phoneLabel>
+      <phoneLabel>Pranit_Patil_Cisco_89XX</phoneLabel>
       <stutterMsgWaiting>1</stutterMsgWaiting>
       <callStats>true</callStats>
       <silentPeriodBetweenCallWaitingBursts>10</silentPeriodBetweenCallWaitingBursts>
@@ -89,17 +89,17 @@
       <sipLines>
          <line button="1">
             <featureID>9</featureID>
-            <featureLabel>Pranit Patil</featureLabel>
+            <featureLabel>Pranit_Patil</featureLabel>
             <proxy>USECALLMANAGER</proxy>
             <port>5060</port>
             <name>100</name>
-            <displayName>Pranit Phone</displayName>
+            <displayName>Pranit_Phone</displayName>
             <autoAnswer>
                <autoAnswerEnabled>2</autoAnswerEnabled>
             </autoAnswer>
             <callWaiting>3</callWaiting>
-            <authName>100</authName>
-            <authPassword>PASSWORD</authPassword> 
+            <authName>SIP_USERNAME</authName>
+            <authPassword>SIP_PASSWORD</authPassword> 
             <sharedLine>false</sharedLine>
             <messageWaitingLampPolicy>1</messageWaitingLampPolicy>
             <messagesNumber>*97</messagesNumber>
