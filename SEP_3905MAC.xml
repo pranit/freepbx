@@ -1,0 +1,57 @@
+<device>
+	<deviceProtocol>SIP</deviceProtocol>
+	<devicePool>
+		<!-- Date and time settings -->
+		<dateTimeSetting>
+			<name>Mexico</name>
+			<dateTemplate>D-M-YA</dateTemplate>
+			<timeZone>Mexico Standard/Daylight Time</timeZone>
+			<ntps>
+				<ntp> <!-- IP Address of your time server -->
+					<name>NTP_SERVER</name>
+					<ntpMode>Unicast</ntpMode>
+				</ntp> 
+			</ntps> 
+		</dateTimeSetting> 
+	</devicePool>
+
+	<callManagerGroup>
+		<members>
+			<member priority="0">
+				<callManager>
+					<ports>
+						<sipPort>5060</sipPort>
+						<securedSipPort>5061</securedSipPort>
+					</ports>
+					<!-- IP address or hostname of your PBX -->
+					<processNodeName>x.x.x.x</processNodeName>
+				</callManager>
+			</member>
+		</members>
+	</callManagerGroup>
+
+	<sipProfile>
+		<!-- Codecs -->
+		<preferredCodec>g711alaw</preferredCodec>
+		<!-- DO NOT MODIFY!!! -->
+		<dtmfAvtPayload>101</dtmfAvtPayload>
+		<dtmfDbLevel>3</dtmfDbLevel>
+		<dtmfOutofBand>avt</dtmfOutofBand>
+		<!-- Lines configuration -->
+		<sipLines>
+			<!-- Line 1 -->
+			<line button="1">
+				<!-- Name, Contact and AuthName are the extension number -->
+				<name>311</name>
+				<displayName>Ext. 311</displayName>
+				<authName>311</authName>
+				<authPassword>********</authPassword>
+				<contact>311</contact>
+			</line>
+		</sipLines>
+		<!-- Dialplan necessary to set timeouts between key press -->
+		<dialTemplate>dialplan.xml</dialTemplate> 
+	</sipProfile>
+	<loadInformation>CP3905.9-4-1-0</loadInformation>
+	<transportLayerProtocol>2</transportLayerProtocol>
+</device>
