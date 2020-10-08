@@ -8,7 +8,7 @@
 			<timeZone>Mexico Standard/Daylight Time</timeZone>
 			<ntps>
 				<ntp> <!-- IP Address of your time server -->
-					<name>NTP_SERVER</name>
+					<name>NTP_SERVER_IP</name>
 					<ntpMode>Unicast</ntpMode>
 				</ntp> 
 			</ntps> 
