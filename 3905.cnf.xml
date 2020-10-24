@@ -1,0 +1,56 @@
+<device>
+	<deviceProtocol>SIP</deviceProtocol>
+	<devicePool>
+		<!-- Date and time settings -->
+		<dateTimeSetting>
+			<name>India</name>
+			<dateTemplate>D-M-YA</dateTemplate>
+			<timeZone>India Standard Time</timeZone>
+			<ntps>
+				<ntp> 
+					<name>172.17.0.101</name>
+					<ntpMode>Unicast</ntpMode>
+				</ntp> 
+			</ntps> 
+		</dateTimeSetting> 
+	</devicePool>
+
+	<callManagerGroup>
+		<members>
+			<member priority="0">
+				<callManager>
+					<ports>
+						<sipPort>5060</sipPort>
+						<securedSipPort>5061</securedSipPort>
+					</ports>
+					<!-- IP address or hostname of your PBX -->
+					<processNodeName>172.17.0.101</processNodeName>
+				</callManager>
+			</member>
+		</members>
+	</callManagerGroup>
+
+	<sipProfile>
+		<!-- Codecs -->
+		<preferredCodec>g711alaw</preferredCodec>
+		<!-- DO NOT MODIFY!!! -->
+		<dtmfAvtPayload>101</dtmfAvtPayload>
+		<dtmfDbLevel>3</dtmfDbLevel>
+		<dtmfOutofBand>avt</dtmfOutofBand>
+		<!-- Lines configuration -->
+		<sipLines>
+			<!-- Line 1 -->
+			<line button="1">
+				<!-- Name, Contact and AuthName are the extension number -->
+				<name>EXTENSION_NUMBER</name>
+				<displayName>EXTENSION_NUMBER</displayName>
+				<authName>EXTENSION_NUMBER</authName>
+				<authPassword>mypassword</authPassword>
+				<contact>EXTENSION_NUMBER</contact>
+			</line>
+		</sipLines>
+		<dialTemplate>dialplan_3905.xml</dialTemplate> 
+	</sipProfile>
+	<loadInformation>CP3905.9-4-1-0</loadInformation>
+	<transportLayerProtocol>2</transportLayerProtocol>
+</device>
