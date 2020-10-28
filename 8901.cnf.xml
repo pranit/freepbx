@@ -106,7 +106,7 @@
             <messagesNumber>*97</messagesNumber>
             <ringSettingIdle>4</ringSettingIdle>
             <ringSettingActive>5</ringSettingActive>
-            <contact>1001_cisco8945</contact>
+            <contact>EXTENSION_NUMBER</contact>
             <forwardCallInfoDisplay>
                <callerName>true</callerName>
                <callerNumber>false</callerNumber>
