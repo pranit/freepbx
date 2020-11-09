@@ -67,8 +67,8 @@
          <timerT1>500</timerT1>
          <timerT2>4000</timerT2>
          <maxRedirects>70</maxRedirects>
-         <remotePartyID>false</remotePartyID>
-         <userInfo>None</userInfo>
+         <remotePartyID>true</remotePartyID>
+         <userInfo>Phone</userInfo>
       </sipStack>
       <autoAnswerTimer>1</autoAnswerTimer>
       <autoAnswerAltBehavior>false</autoAnswerAltBehavior>
